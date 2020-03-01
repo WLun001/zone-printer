@@ -85,7 +85,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 			to the closest compute region the application is deployed in.
 		</p>
 		<p>
-			<small><a href="https://github.com/ahmetb/zone-printer">[source code]</a></small>
+			<small><a href="https://github.com/WLun001/zone-printer">[source code]</a></small>
 		</p>`)
 }
 

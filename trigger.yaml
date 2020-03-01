@@ -1,0 +1,9 @@
+description: Push to master
+github:
+  name: zone-printer
+  owner: WLun001
+  push:
+    branch: master
+name: push-master
+tags:
+  - github-default-push-trigger
