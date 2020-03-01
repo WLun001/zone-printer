@@ -1,9 +1,13 @@
 description: Push to master
+filename: cloudbuild.yaml
 github:
   name: zone-printer
   owner: WLun001
   push:
     branch: master
 name: push-master
+substitutions:
+  _REGION: asia-east1
+  _SERVICE_NAME: zone-printer
 tags:
   - github-default-push-trigger
