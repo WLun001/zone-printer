@@ -26,6 +26,3 @@ steps:
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'
-
-images:
-  - 'gcr.io/$PROJECT_ID/zone-printer:$SHORT_SHA'
