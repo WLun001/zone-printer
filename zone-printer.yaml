@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zone-printer
+  labels:
+    app: zone-printer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zone-printer
+  template:
+    metadata:
+      labels:
+        app: zone-printer
+    spec:
+      containers:
+        - name: zone-printer-image
+          image: gcr.io/medicbot-d925b/zone-printer:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zone-printer-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: zone-printer
+  ports:
+    - port: 3000
+      targetPort: 8080
