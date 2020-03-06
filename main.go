@@ -76,7 +76,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 
 	} else {
 		fmt.Fprintf(w, `<h1>%s</h1>
-		<h3 style="color: blue">You are now connected to &quot;%s&quot;</h3>
+		<h3 style="color: red">You are now connected to &quot;%s&quot;</h3>
 		<img src="%s" style="width: 480px; height: auto; border: 1px solid #444;"/>`, dc.location, computeZone, dc.flagURL)
 	}
 	fmt.Fprintf(w, `
